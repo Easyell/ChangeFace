@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f1e323b6-84a1-4ab1-8d14-fec1dd7bc53f" name="Default" comment="" />
+    <ignored path="TakePhoto.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="TakePhoto" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="123.63636" vertical-offset="5472" max-vertical-offset="15120">
+              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+              <folding>
+                <marker date="1435219961000" expanded="true" signature="17555:17569" placeholder="..." />
+                <marker date="1435219961000" expanded="true" signature="21760:21775" placeholder="..." />
+                <marker date="1435219961000" expanded="true" signature="22057:22087" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="photo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.2727275" vertical-offset="0" max-vertical-offset="480">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Photo.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Photo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33333334" vertical-offset="270" max-vertical-offset="3432">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Photo.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Photo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="264">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/all.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="20491" max-vertical-offset="35544">
+              <caret line="2365" column="0" selection-start-line="2365" selection-start-column="0" selection-end-line="2610" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#92#22164#0" expanded="false" />
+                <element signature="e#22246#28863#0" expanded="false" />
+                <element signature="e#28911#29005#0" expanded="false" />
+                <element signature="e#29034#29092#0" expanded="false" />
+                <element signature="e#29112#29183#0" expanded="false" />
+                <element signature="e#29203#29268#0" expanded="false" />
+                <element signature="e#29291#29458#0" expanded="false" />
+                <element signature="e#29487#29652#0" expanded="false" />
+                <element signature="e#29684#29834#0" expanded="false" />
+                <element signature="e#29860#29966#0" expanded="false" />
+                <element signature="e#29985#29992#0" expanded="false" />
+                <element signature="e#30012#30160#0" expanded="false" />
+                <element signature="e#30183#30259#0" expanded="false" />
+                <element signature="e#30279#30492#0" expanded="false" />
+                <element signature="e#30521#30731#0" expanded="false" />
+                <element signature="e#30760#31081#0" expanded="false" />
+                <element signature="e#31363#32194#0" expanded="false" />
+                <element signature="e#32386#32442#0" expanded="false" />
+                <element signature="e#118141#119071#0" expanded="false" />
+                <element signature="e#119088#119945#0" expanded="false" />
+                <element signature="e#119967#123420#0" expanded="false" />
+                <element signature="e#132498#135110#0" expanded="false" />
+                <element signature="e#135142#138584#0" expanded="false" />
+                <element signature="n#!!block;n#JPEGEncoder#0" expanded="false" />
+                <marker date="1435208661000" expanded="true" signature="98292:98336" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/all.js" />
+        <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/photo.html" />
+        <option value="$PROJECT_DIR$/Photo.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="122" />
+    <option name="y" value="23" />
+    <option name="width" value="1225" />
+    <option name="height" value="777" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TakePhoto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TakePhoto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TakePhoto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TakePhoto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TakePhoto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exif-js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript 1.5" value="false" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1e323b6-84a1-4ab1-8d14-fec1dd7bc53f" name="Default" comment="" />
+      <created>1435198669960</created>
+      <option name="number" value="Default" />
+      <updated>1435198669960</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="122" y="23" width="1225" height="777" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11295681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5472" max-vertical-offset="15120">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+          <folding>
+            <marker date="1435219961000" expanded="true" signature="17555:17569" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="21760:21775" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="22057:22087" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="408">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2184">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="264">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="24540" max-vertical-offset="44376">
+          <caret line="1740" column="14" selection-start-line="1740" selection-start-column="14" selection-end-line="1740" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#92#22164#0" expanded="false" />
+            <element signature="e#22246#28863#0" expanded="false" />
+            <element signature="e#28911#29005#0" expanded="false" />
+            <element signature="e#29034#29092#0" expanded="false" />
+            <element signature="e#29112#29183#0" expanded="false" />
+            <element signature="e#29203#29268#0" expanded="false" />
+            <element signature="e#29291#29458#0" expanded="false" />
+            <element signature="e#29487#29652#0" expanded="false" />
+            <element signature="e#29684#29834#0" expanded="false" />
+            <element signature="e#29860#29966#0" expanded="false" />
+            <element signature="e#29985#29992#0" expanded="false" />
+            <element signature="e#30012#30160#0" expanded="false" />
+            <element signature="e#30183#30259#0" expanded="false" />
+            <element signature="e#30279#30492#0" expanded="false" />
+            <element signature="e#30521#30731#0" expanded="false" />
+            <element signature="e#30760#31081#0" expanded="false" />
+            <element signature="e#31363#32194#0" expanded="false" />
+            <element signature="e#32386#32442#0" expanded="false" />
+            <element signature="e#118141#119071#0" expanded="false" />
+            <element signature="e#119088#119945#0" expanded="false" />
+            <element signature="e#119967#123420#0" expanded="false" />
+            <element signature="e#132498#135110#0" expanded="false" />
+            <element signature="e#135142#138584#0" expanded="false" />
+            <element signature="n#!!block;n#JPEGEncoder#0" expanded="false" />
+            <marker date="1435208661000" expanded="true" signature="98292:98336" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5472" max-vertical-offset="15120">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+          <folding>
+            <marker date="1435219961000" expanded="true" signature="17555:17569" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="21760:21775" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="22057:22087" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="408">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2736">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="264">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="24540" max-vertical-offset="44376">
+          <caret line="1740" column="14" selection-start-line="1740" selection-start-column="14" selection-end-line="1740" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#92#22164#0" expanded="false" />
+            <element signature="e#22246#28863#0" expanded="false" />
+            <element signature="e#28911#29005#0" expanded="false" />
+            <element signature="e#29034#29092#0" expanded="false" />
+            <element signature="e#29112#29183#0" expanded="false" />
+            <element signature="e#29203#29268#0" expanded="false" />
+            <element signature="e#29291#29458#0" expanded="false" />
+            <element signature="e#29487#29652#0" expanded="false" />
+            <element signature="e#29684#29834#0" expanded="false" />
+            <element signature="e#29860#29966#0" expanded="false" />
+            <element signature="e#29985#29992#0" expanded="false" />
+            <element signature="e#30012#30160#0" expanded="false" />
+            <element signature="e#30183#30259#0" expanded="false" />
+            <element signature="e#30279#30492#0" expanded="false" />
+            <element signature="e#30521#30731#0" expanded="false" />
+            <element signature="e#30760#31081#0" expanded="false" />
+            <element signature="e#31363#32194#0" expanded="false" />
+            <element signature="e#32386#32442#0" expanded="false" />
+            <element signature="e#118141#119071#0" expanded="false" />
+            <element signature="e#119088#119945#0" expanded="false" />
+            <element signature="e#119967#123420#0" expanded="false" />
+            <element signature="e#132498#135110#0" expanded="false" />
+            <element signature="e#135142#138584#0" expanded="false" />
+            <element signature="n#!!block;n#JPEGEncoder#0" expanded="false" />
+            <marker date="1435208661000" expanded="true" signature="98292:98336" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5472" max-vertical-offset="15120">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+          <folding>
+            <marker date="1435219961000" expanded="true" signature="17555:17569" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="21760:21775" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="22057:22087" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="408">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2208">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="264">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="24540" max-vertical-offset="44376">
+          <caret line="1740" column="14" selection-start-line="1740" selection-start-column="14" selection-end-line="1740" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#92#22164#0" expanded="false" />
+            <element signature="e#22246#28863#0" expanded="false" />
+            <element signature="e#28911#29005#0" expanded="false" />
+            <element signature="e#29034#29092#0" expanded="false" />
+            <element signature="e#29112#29183#0" expanded="false" />
+            <element signature="e#29203#29268#0" expanded="false" />
+            <element signature="e#29291#29458#0" expanded="false" />
+            <element signature="e#29487#29652#0" expanded="false" />
+            <element signature="e#29684#29834#0" expanded="false" />
+            <element signature="e#29860#29966#0" expanded="false" />
+            <element signature="e#29985#29992#0" expanded="false" />
+            <element signature="e#30012#30160#0" expanded="false" />
+            <element signature="e#30183#30259#0" expanded="false" />
+            <element signature="e#30279#30492#0" expanded="false" />
+            <element signature="e#30521#30731#0" expanded="false" />
+            <element signature="e#30760#31081#0" expanded="false" />
+            <element signature="e#31363#32194#0" expanded="false" />
+            <element signature="e#32386#32442#0" expanded="false" />
+            <element signature="e#118141#119071#0" expanded="false" />
+            <element signature="e#119088#119945#0" expanded="false" />
+            <element signature="e#119967#123420#0" expanded="false" />
+            <element signature="e#132498#135110#0" expanded="false" />
+            <element signature="e#135142#138584#0" expanded="false" />
+            <element signature="n#!!block;n#JPEGEncoder#0" expanded="false" />
+            <marker date="1435208661000" expanded="true" signature="98292:98336" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5472" max-vertical-offset="15120">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+          <folding>
+            <marker date="1435219961000" expanded="true" signature="17555:17569" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="21760:21775" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="22057:22087" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="408">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1704">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="264">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51954" max-vertical-offset="52584">
+          <caret line="2678" column="0" selection-start-line="2678" selection-start-column="0" selection-end-line="2678" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#92#22164#0" expanded="false" />
+            <element signature="e#22246#28863#0" expanded="false" />
+            <element signature="e#28911#29005#0" expanded="false" />
+            <element signature="e#29034#29092#0" expanded="false" />
+            <element signature="e#29112#29183#0" expanded="false" />
+            <element signature="e#29203#29268#0" expanded="false" />
+            <element signature="e#29291#29458#0" expanded="false" />
+            <element signature="e#29487#29652#0" expanded="false" />
+            <element signature="e#29684#29834#0" expanded="false" />
+            <element signature="e#29860#29966#0" expanded="false" />
+            <element signature="e#29985#29992#0" expanded="false" />
+            <element signature="e#30012#30160#0" expanded="false" />
+            <element signature="e#30183#30259#0" expanded="false" />
+            <element signature="e#30279#30492#0" expanded="false" />
+            <element signature="e#30521#30731#0" expanded="false" />
+            <element signature="e#30760#31081#0" expanded="false" />
+            <element signature="e#31363#32194#0" expanded="false" />
+            <element signature="e#32386#32442#0" expanded="false" />
+            <element signature="e#118141#119071#0" expanded="false" />
+            <element signature="e#119088#119945#0" expanded="false" />
+            <element signature="e#119967#123420#0" expanded="false" />
+            <element signature="e#132498#135110#0" expanded="false" />
+            <element signature="e#135142#138584#0" expanded="false" />
+            <element signature="n#!!block;n#JPEGEncoder#0" expanded="false" />
+            <marker date="1435208661000" expanded="true" signature="98292:98336" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5472" max-vertical-offset="15120">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+          <folding>
+            <marker date="1435219961000" expanded="true" signature="17555:17569" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="21760:21775" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="22057:22087" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="408">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1584">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="264">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="29382" max-vertical-offset="44160">
+          <caret line="1234" column="44" selection-start-line="1234" selection-start-column="44" selection-end-line="1234" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#92#22164#0" expanded="false" />
+            <element signature="e#22246#28863#0" expanded="false" />
+            <element signature="e#28911#29005#0" expanded="false" />
+            <element signature="e#29034#29092#0" expanded="false" />
+            <element signature="e#29112#29183#0" expanded="false" />
+            <element signature="e#29203#29268#0" expanded="false" />
+            <element signature="e#29291#29458#0" expanded="false" />
+            <element signature="e#29487#29652#0" expanded="false" />
+            <element signature="e#29684#29834#0" expanded="false" />
+            <element signature="e#29860#29966#0" expanded="false" />
+            <element signature="e#29985#29992#0" expanded="false" />
+            <element signature="e#30012#30160#0" expanded="false" />
+            <element signature="e#30183#30259#0" expanded="false" />
+            <element signature="e#30279#30492#0" expanded="false" />
+            <element signature="e#30521#30731#0" expanded="false" />
+            <element signature="e#30760#31081#0" expanded="false" />
+            <element signature="e#31363#32194#0" expanded="false" />
+            <element signature="e#32386#32442#0" expanded="false" />
+            <element signature="e#118141#119071#0" expanded="false" />
+            <element signature="e#119088#119945#0" expanded="false" />
+            <element signature="e#119967#123420#0" expanded="false" />
+            <element signature="e#132498#135110#0" expanded="false" />
+            <element signature="e#135142#138584#0" expanded="false" />
+            <element signature="n#!!block;n#JPEGEncoder#0" expanded="false" />
+            <marker date="1435208661000" expanded="true" signature="98292:98336" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5472" max-vertical-offset="15120">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+          <folding>
+            <marker date="1435219961000" expanded="true" signature="17555:17569" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="21760:21775" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="22057:22087" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="408">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1512">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="264">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="29382" max-vertical-offset="44160">
+          <caret line="1234" column="44" selection-start-line="1234" selection-start-column="44" selection-end-line="1234" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#92#22164#0" expanded="false" />
+            <element signature="e#22246#28863#0" expanded="false" />
+            <element signature="e#28911#29005#0" expanded="false" />
+            <element signature="e#29034#29092#0" expanded="false" />
+            <element signature="e#29112#29183#0" expanded="false" />
+            <element signature="e#29203#29268#0" expanded="false" />
+            <element signature="e#29291#29458#0" expanded="false" />
+            <element signature="e#29487#29652#0" expanded="false" />
+            <element signature="e#29684#29834#0" expanded="false" />
+            <element signature="e#29860#29966#0" expanded="false" />
+            <element signature="e#29985#29992#0" expanded="false" />
+            <element signature="e#30012#30160#0" expanded="false" />
+            <element signature="e#30183#30259#0" expanded="false" />
+            <element signature="e#30279#30492#0" expanded="false" />
+            <element signature="e#30521#30731#0" expanded="false" />
+            <element signature="e#30760#31081#0" expanded="false" />
+            <element signature="e#31363#32194#0" expanded="false" />
+            <element signature="e#32386#32442#0" expanded="false" />
+            <element signature="e#118141#119071#0" expanded="false" />
+            <element signature="e#119088#119945#0" expanded="false" />
+            <element signature="e#119967#123420#0" expanded="false" />
+            <element signature="e#132498#135110#0" expanded="false" />
+            <element signature="e#135142#138584#0" expanded="false" />
+            <element signature="n#!!block;n#JPEGEncoder#0" expanded="false" />
+            <marker date="1435208661000" expanded="true" signature="98292:98336" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15120">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1435219961000" expanded="true" signature="17555:17569" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="21760:21775" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="22057:22087" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="408">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="29814" max-vertical-offset="44160">
+          <caret line="1252" column="444" selection-start-line="1252" selection-start-column="444" selection-end-line="1252" selection-end-column="444" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#92#22164#0" expanded="false" />
+            <element signature="e#22246#28863#0" expanded="false" />
+            <element signature="e#28911#29005#0" expanded="false" />
+            <element signature="e#29034#29092#0" expanded="false" />
+            <element signature="e#29112#29183#0" expanded="false" />
+            <element signature="e#29203#29268#0" expanded="false" />
+            <element signature="e#29291#29458#0" expanded="false" />
+            <element signature="e#29487#29652#0" expanded="false" />
+            <element signature="e#29684#29834#0" expanded="false" />
+            <element signature="e#29860#29966#0" expanded="false" />
+            <element signature="e#29985#29992#0" expanded="false" />
+            <element signature="e#30012#30160#0" expanded="false" />
+            <element signature="e#30183#30259#0" expanded="false" />
+            <element signature="e#30279#30492#0" expanded="false" />
+            <element signature="e#30521#30731#0" expanded="false" />
+            <element signature="e#30760#31081#0" expanded="false" />
+            <element signature="e#31363#32194#0" expanded="false" />
+            <element signature="e#32386#32442#0" expanded="false" />
+            <element signature="e#118141#119071#0" expanded="false" />
+            <element signature="e#119088#119945#0" expanded="false" />
+            <element signature="e#119967#123420#0" expanded="false" />
+            <element signature="e#132498#135110#0" expanded="false" />
+            <element signature="e#135142#138584#0" expanded="false" />
+            <element signature="n#!!block;n#JPEGEncoder#0" expanded="false" />
+            <marker date="1435208661000" expanded="true" signature="98292:98336" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15120">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1435219961000" expanded="true" signature="17555:17569" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="21760:21775" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="22057:22087" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="29814" max-vertical-offset="44160">
+          <caret line="1252" column="444" selection-start-line="1252" selection-start-column="444" selection-end-line="1252" selection-end-column="444" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#92#22164#0" expanded="false" />
+            <element signature="e#22246#28863#0" expanded="false" />
+            <element signature="e#28911#29005#0" expanded="false" />
+            <element signature="e#29034#29092#0" expanded="false" />
+            <element signature="e#29112#29183#0" expanded="false" />
+            <element signature="e#29203#29268#0" expanded="false" />
+            <element signature="e#29291#29458#0" expanded="false" />
+            <element signature="e#29487#29652#0" expanded="false" />
+            <element signature="e#29684#29834#0" expanded="false" />
+            <element signature="e#29860#29966#0" expanded="false" />
+            <element signature="e#29985#29992#0" expanded="false" />
+            <element signature="e#30012#30160#0" expanded="false" />
+            <element signature="e#30183#30259#0" expanded="false" />
+            <element signature="e#30279#30492#0" expanded="false" />
+            <element signature="e#30521#30731#0" expanded="false" />
+            <element signature="e#30760#31081#0" expanded="false" />
+            <element signature="e#31363#32194#0" expanded="false" />
+            <element signature="e#32386#32442#0" expanded="false" />
+            <element signature="e#118141#119071#0" expanded="false" />
+            <element signature="e#119088#119945#0" expanded="false" />
+            <element signature="e#119967#123420#0" expanded="false" />
+            <element signature="e#132498#135110#0" expanded="false" />
+            <element signature="e#135142#138584#0" expanded="false" />
+            <element signature="n#!!block;n#JPEGEncoder#0" expanded="false" />
+            <marker date="1435208661000" expanded="true" signature="98292:98336" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7686" max-vertical-offset="9465">
+          <caret line="520" column="27" selection-start-line="520" selection-start-column="27" selection-end-line="520" selection-end-column="27" />
+          <folding>
+            <marker date="1435219961000" expanded="true" signature="17555:17569" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="21760:21775" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="22057:22087" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="36975">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#92#22164#0" expanded="false" />
+            <element signature="e#22246#28863#0" expanded="false" />
+            <element signature="e#28911#29005#0" expanded="false" />
+            <element signature="e#29034#29092#0" expanded="false" />
+            <element signature="e#29112#29183#0" expanded="false" />
+            <element signature="e#29203#29268#0" expanded="false" />
+            <element signature="e#29291#29458#0" expanded="false" />
+            <element signature="e#29487#29652#0" expanded="false" />
+            <element signature="e#29684#29834#0" expanded="false" />
+            <element signature="e#29860#29966#0" expanded="false" />
+            <element signature="e#29985#29992#0" expanded="false" />
+            <element signature="e#30012#30160#0" expanded="false" />
+            <element signature="e#30183#30259#0" expanded="false" />
+            <element signature="e#30279#30492#0" expanded="false" />
+            <element signature="e#30521#30731#0" expanded="false" />
+            <element signature="e#30760#31081#0" expanded="false" />
+            <element signature="e#31363#32194#0" expanded="false" />
+            <element signature="e#32386#32442#0" expanded="false" />
+            <element signature="e#118141#119071#0" expanded="false" />
+            <element signature="e#119088#119945#0" expanded="false" />
+            <element signature="e#119967#123420#0" expanded="false" />
+            <element signature="e#132498#135110#0" expanded="false" />
+            <element signature="e#135142#138584#0" expanded="false" />
+            <element signature="n#!!block;n#JPEGEncoder#0" expanded="false" />
+            <marker date="1435208661000" expanded="true" signature="98292:98336" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7686" max-vertical-offset="9465">
+          <caret line="520" column="27" selection-start-line="520" selection-start-column="27" selection-end-line="520" selection-end-column="27" />
+          <folding>
+            <marker date="1435219961000" expanded="true" signature="17555:17569" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="21760:21775" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="22057:22087" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="36975">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#92#22164#0" expanded="false" />
+            <element signature="e#22246#28863#0" expanded="false" />
+            <element signature="e#28911#29005#0" expanded="false" />
+            <element signature="e#29034#29092#0" expanded="false" />
+            <element signature="e#29112#29183#0" expanded="false" />
+            <element signature="e#29203#29268#0" expanded="false" />
+            <element signature="e#29291#29458#0" expanded="false" />
+            <element signature="e#29487#29652#0" expanded="false" />
+            <element signature="e#29684#29834#0" expanded="false" />
+            <element signature="e#29860#29966#0" expanded="false" />
+            <element signature="e#29985#29992#0" expanded="false" />
+            <element signature="e#30012#30160#0" expanded="false" />
+            <element signature="e#30183#30259#0" expanded="false" />
+            <element signature="e#30279#30492#0" expanded="false" />
+            <element signature="e#30521#30731#0" expanded="false" />
+            <element signature="e#30760#31081#0" expanded="false" />
+            <element signature="e#31363#32194#0" expanded="false" />
+            <element signature="e#32386#32442#0" expanded="false" />
+            <element signature="e#118141#119071#0" expanded="false" />
+            <element signature="e#119088#119945#0" expanded="false" />
+            <element signature="e#119967#123420#0" expanded="false" />
+            <element signature="e#132498#135110#0" expanded="false" />
+            <element signature="e#135142#138584#0" expanded="false" />
+            <element signature="n#!!block;n#JPEGEncoder#0" expanded="false" />
+            <marker date="1435208661000" expanded="true" signature="98292:98336" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="264">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="27501" max-vertical-offset="56472">
+          <caret line="1155" column="35" selection-start-line="1155" selection-start-column="35" selection-end-line="1155" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="33043" max-vertical-offset="35544">
+          <caret line="2365" column="0" selection-start-line="2365" selection-start-column="0" selection-end-line="2610" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#92#22164#0" expanded="false" />
+            <element signature="e#22246#28863#0" expanded="false" />
+            <element signature="e#28911#29005#0" expanded="false" />
+            <element signature="e#29034#29092#0" expanded="false" />
+            <element signature="e#29112#29183#0" expanded="false" />
+            <element signature="e#29203#29268#0" expanded="false" />
+            <element signature="e#29291#29458#0" expanded="false" />
+            <element signature="e#29487#29652#0" expanded="false" />
+            <element signature="e#29684#29834#0" expanded="false" />
+            <element signature="e#29860#29966#0" expanded="false" />
+            <element signature="e#29985#29992#0" expanded="false" />
+            <element signature="e#30012#30160#0" expanded="false" />
+            <element signature="e#30183#30259#0" expanded="false" />
+            <element signature="e#30279#30492#0" expanded="false" />
+            <element signature="e#30521#30731#0" expanded="false" />
+            <element signature="e#30760#31081#0" expanded="false" />
+            <element signature="e#31363#32194#0" expanded="false" />
+            <element signature="e#32386#32442#0" expanded="false" />
+            <element signature="e#118141#119071#0" expanded="false" />
+            <element signature="e#119088#119945#0" expanded="false" />
+            <element signature="e#119967#123420#0" expanded="false" />
+            <element signature="e#132498#135110#0" expanded="false" />
+            <element signature="e#135142#138584#0" expanded="false" />
+            <element signature="n#!!block;n#JPEGEncoder#0" expanded="false" />
+            <marker date="1435208661000" expanded="true" signature="98292:98336" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="123.63636" vertical-offset="5472" max-vertical-offset="15120">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+          <folding>
+            <marker date="1435219961000" expanded="true" signature="17555:17569" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="21760:21775" placeholder="..." />
+            <marker date="1435219961000" expanded="true" signature="22057:22087" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="23301" max-vertical-offset="115224">
+          <caret line="980" column="0" selection-start-line="980" selection-start-column="0" selection-end-line="980" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2727275" vertical-offset="0" max-vertical-offset="480">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Photo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="270" max-vertical-offset="3432">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

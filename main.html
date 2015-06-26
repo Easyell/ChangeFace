@@ -1,0 +1,625 @@
+
+<!DOCTYPE HTML>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Tencent-TGideas">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>与金秀贤合影-移动游戏狂欢季-腾讯游戏</title>
+<!-- 设计：tuntundeng, yafeezhou | 重构：brucewan | 创建：2014/08/01 | 更新：| 团队博客：http://tgideas.qq.com/ -->
+<style>
+
+/* global */
+html,body,ul,h1,h2,h3,p,input,img,figure{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+html, body{width: 100%;height: 100%;overflow: hidden;-webkit-user-select: none;}
+body{background:-webkit-linear-gradient(#c5d9f6,#fff 50%);background:linear-gradient(#c5d9f6,#fff 50%);font:12px/21px \5FAE\8F6F\96C5\9ED1;color: #fff;}
+a, img{outline: 0 none;}
+
+[class*="icon-"]{display: inline-block;width: 45px;height: 45px;overflow: hidden;line-height: 200px;background: url(http://ossweb-img.qq.com/images/sy/carnival/icon.png) no-repeat;-webkit-background-size: 250px 250px;background-size: 250px 250px;vertical-align: middle;}
+.icon-logo{width: 70px;background-position: 8px 5px;}
+.icon-game{width: 30px;height: 15px;background-position: -50px -100px;}
+.icon-camra-gray{width: 25px;height: 16px;background-position: -100px -100px;}
+.icon-play{width: 30px;height: 35px;background-position: -200px -100px;}
+.icon-left{width: 13px;height: 21px;background-position: -100px -2px;}
+.icon-right{width: 13px;height: 21px;background-position: -150px -2px;}
+.icon-scale{width: 30px;height: 30px;background-position: -139px -141px;}
+.icon-rotate{width: 30px;height: 30px;background-position: -191px -141px;}
+.icon-down{width: 30px;height: 20px;background-position: -150px -100px;}
+
+
+/* layout */
+.pages{width: 200%;height: 100%;overflow: hidden;zoom:1;}
+.pages .page{float: left;width:50%;height: 100%;}
+.pages .p1{height: 300%;}
+.pages .p1 .sub-page{width: 100%;height: 33.34%;-webkit-box-sizing: border-box;padding-top: 50px;}
+
+
+/* moudle */
+.list-game li{float: left;text-align: center;}
+.list-game a:link, .list-game  a:visited, .list-game  a:hover, .list-game a:active{display: inline-block;width: 212px;border: 1px solid #ddd;line-height: 30px;border-radius: 3px;color: #fff;text-decoration: none;}
+.list-game span{display: block;background-color: #526fc3;}
+.list-game li:nth-child(1) span{background-color: #353535;}
+.list-game li:nth-child(2) span{background-color: #1d97ff;}
+.list-game li:nth-child(3) span{background-color: #5b47c0;}
+.list-game li:nth-child(4) span{background-color: #526fc3;}
+.list-game li:nth-child(5) span{background-color: #4cb618;}
+.list-game img{display: block;}
+.list-game .locked{-webkit-filter:grayscale(1);}
+
+.p1{position: relative;}
+.p1 .content{height: 100%;}
+.p1 nav{position: absolute;left: 0;top: 0;width: 100%;height: 50px;z-index: 2;background-color: #fff;}
+.p1 nav ul{display:-webkit-box;display: box;}
+.p1 nav li{-webkit-box-flex:1;box-flex:1;text-align: center;line-height: 50px;font-size:14px;color: #666;-webkit-transition:.5s opacity;}
+.p1 nav span{margin-top: -2px;margin-right: 3px;}
+.p1 nav li.current{color: #2aa700;}
+.p1 nav li.current .icon-game{background-position: 0 -150px;}
+.p1 nav li.current .icon-camra-gray{background-position:-50px -150px;}
+
+
+.p1 .arrow{-webkit-animation: move-down 0.8s infinite;}
+.p1 .sp1{position: relative;background: url(http://ossweb-img.qq.com/images/sy/carnival/pic1.jpg) no-repeat center 50px;-webkit-background-size: 320px 456px;background-size: 320px 456px;}
+.p1 .sp1 .pos{position: absolute;left: 0;top: 0;}
+.p1 .sp1 .pos1{left: 50%;top: 50%;width: 85px;height: 85px;margin-left: -42px;margin-top: -42px;border-radius: 50px; background-color: rgba(42, 167, 0, 0.8);}
+.p1 .sp1 .pos1 .icon-play{margin: 25px 0 0 33px}
+.p1 .sp1 .arrow{position: absolute;bottom: 20px;left: 50%;margin-left: -15px;}
+
+.p1 .sp2{position: relative;}
+.p1 .sp2 .list-game{position: absolute;left: 0;top: 50%;width: 1000%;height: 280px;margin-left: 13%;margin-top: -140px;}
+.p1 .sp2 .list-game li{float: left;width: 7.4%;height: 100%;}
+.p1 .sp2 .list-game-trigger{position: absolute;left: 0;bottom: 0;width: 100%;border: 1px solid #dad9d9;color: #e3e3e3;padding: 10px;overflow: hidden;-webkit-box-sizing: border-box;box-sizing: border-box;text-align: center;}
+.p1 .sp2 .list-game-trigger a{display: inline-block;margin:5px 0;padding:0 1px;text-align: center;line-height: 16px;}
+.p1 .sp2 .list-game-trigger a:nth-child(5), .p1 .sp2 .list-game-trigger a:nth-child(10){border-right: 0 none}
+.p1 .sp2 .list-game-trigger a, .p1 .sp2 .list-game-trigger a:visited{color: #999;text-decoration: none;}
+.p1 .sp2 .list-game-trigger .current, .p1 .sp2 .list-game-trigger .current:visited{color: #2aa700;}
+
+
+
+
+
+.p1 .sp3{position: relative;background: url(http://ossweb-img.qq.com/images/sy/carnival/pic2.jpg) no-repeat center 50px;-webkit-background-size: 320px 456px;background-size: 320px 456px;}
+.p1 .sp3 .real-btn {position: absolute;left: 50%;top: 270px;margin-left: -140px;width: 100px;height: 50px;opacity: 0;}
+.p1 .sp3 .btn-take-photo{position: absolute;left: 50%;top: 275px;margin-left: -135px;width: 90px;height: 40px;border-radius: 5px;border: 0 none;background-color: #2aa700;color: #fff;font-size: 14px;font-weight: bold;pointer-events:none;}
+
+.p1 .sp3 .pos1{position: absolute;left: 50%;top: 146px;margin-left: -133px;font-size: 12px;color: #000;}
+.p1 .sp3 .pos1 .em{color: #2aa700}
+.p1 .sp3 .arrow{position: absolute;bottom: 20px;left: 50%;margin-left: -15px;}
+
+
+
+.list-role li{float: left;width: 110px;padding: 5px 0;border-right:1px solid #e5e5e5;border-bottom: 1px solid #e5e5e5;border-top: 1px solid #e8e8e8;color: #000;text-align: center;line-height: 24px;}
+.list-role .thumb{width: 55px;height: 55px;margin:0 auto;border-radius: 30px; background-color: #ffa903; overflow: hidden;}
+.list-role li:nth-child(1) .thumb{background: #ffa903 url(http://ossweb-img.qq.com/images/sy/carnival/role-none.png);-webkit-background-size: 55px 55px;background-size: 55px 55px;}
+.list-role .thumb img{width: 55px;}
+.list-role .current{position: relative;}
+.list-role .current::after{content: ' ';position: absolute;left: 64px;top: 41px;width: 25px;height: 25px;background: url(http://ossweb-img.qq.com/images/sy/carnival/icon.png) no-repeat -100px -150px;-webkit-background-size: 250px 250px;background-size: 250px 250px;}
+
+.p2{background-color: #fff;}
+.p2 .content{position: relative;width: 100%;height: 33.3%;overflow: hidden;background-color: #eee;}
+.p2 nav{width: 100%;height: 50px;border-bottom: 1px solid #e8e8e8;color: #666;font-size: 14px;}
+.p2 nav ul{display:-webkit-box;display: box;}
+.p2 nav .icon-left, .p2 nav .icon-right{margin: 0 5px;}
+.p2 nav h2{color: #2aa700;font-size: 14px;}
+.p2 nav li{-webkit-box-flex:1;box-flex:1;text-align: center;line-height: 50px;-webkit-transition:.5s opacity;}
+
+.p2 .editor{position: relative;width: 320px;height: 270px;top: 50%;margin:-183px auto 0;overflow: hidden;}
+.p2 .editor .role{position: absolute;left: 50px;top: 20px;display: none;z-index: 2;}
+.p2 .editor .icon-scale{display: none;}
+.p2 .editor .snapshot{position: absolute;left: 10px;top: 10px;z-index: 1;}
+.p2 .editor .img-wrap.enanled{outline: 2px solid #fff;}
+.p2 .editor .img-wrap.enanled .icon-scale{display: block;position: absolute;right: -13px;top: -13px;width: 30px;height: 30px;-webkit-box-shadow:1px 1px 4px rgba(0,0,0,0.3);box-shadow:1px 1px 4px rgba(0,0,0,0.3);border-radius: 15px; background-color: #e3e3e3;}
+
+  .p2 .editor .img-wrap{transform-origin:right top;-webkit-transform-origin:right top;}
+
+.p2 .tools{overflow: hidden;position: absolute;left: 0;bottom: 0;height: 90px;width: 100%;background-color: #fff;}
+.p2 .tools .list-role{width: 1000px;}
+.p2 .hint{display: none;position: absolute;left: 0;top: 0;z-index: 2;width: 100%;height: 100%;background-color: rgba(0,0,0,0.8);color: #fff;text-align: center;line-height: 50px;}
+
+@-webkit-keyframes move-down {
+	50% { -webkit-transform: translate(0, 10px)}
+}
+
+.video-wrap{position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+.video-wrap .video-box{position: absolute;left: 50%;top: 50%;width: 320px;height: 250px;margin-left: -160px;margin-top: -125px;}
+.tvp_container {background-color: transparent !important;}
+.tvp_video{background-color: transparent !important;}
+.tvp_container .tvp_overlay_play{width: 85px;height: 85px;margin-left: -40px;border-radius: 50px;-webkit-transform: scale(1) !important;background-color: rgba(42, 167, 0, 0.8);}
+.tvp_container .tvp_button_play{margin-top: 21px;margin-left: 10px;}
+.video-wrap .tvp_shadow{pointer-events:none;}
+.video-wrap .btn-close{display: none;position: absolute;left: 50%;top: 50%;margin-top: -151px;margin-left: 110px;width: 50px;height: 25px;line-height: 25px;text-align: center;background-color:  rgba(255,255,255, 0.5);border-top-left-radius: 5px; border-top-right-radius: 5px; color: #fff;}
+.playing{background-color: rgba(0,0,0,0.8);}
+.playing .btn-close{display: block;}
+
+
+
+@media screen and (orientation:landscape) {
+	.p1 .sp3{background-position: center -10px;}
+	.p1 .sp3 .pos1{top: 86px;}
+	.p1 .sp3 .btn-take-photo{top: 215px;}
+	.p1 .sp3 .real-btn{top: 210px;}
+	.p1 .sp2 .list-game li{-webkit-transform: scale(0.5, 0.5);}
+}
+
+</style>
+<script>
+	document.documentElement.style.height = window.innerHeight + 'px';
+</script>
+</head>
+
+<body>
+	<div class="pages">
+		<div class="page p1">
+			<nav class="whole-nav">
+				<ul>
+					<li><span class="icon-logo">移动游戏狂欢季</span></li>
+					<li><span class="icon-camra-gray"></span>合影</li>
+					<li><span class="icon-game"></span>活动专区</li>
+				</ul>
+			</nav>
+			<div class="content">
+				<div class="sub-page sp1">
+					<div class="arrow"><span class="icon-down">下一页</span></div>
+					<div class="video-wrap"><div class="video-box" id="video-box"></div><div class="btn-close">关闭</div></div>
+				</div>
+				<div class="sub-page sp3">
+					<input id="file" type="file" class="real-btn" />
+					<button class="btn-take-photo">我要合影</button>
+					<p class="pos1">更多游戏 尽在<span class="em">手机QQ</span></p>
+					<div class="arrow"><span class="icon-down">下一页</span></div>
+				</div>	
+				<div class="sub-page sp2">
+					<ul class="list-game">
+						<li ><a href="http://sy.qq.com/carnival/game/ccs.html"><img src="http://ossweb-img.qq.com/images/sy/carnival/game-ccs.jpg" alt="糖果传奇" width="212"><span>来自金秀贤的甜蜜邀请 &gt;&gt;</span></a></li>
+						<li><a href="http://sy.qq.com/carnival/game/qmx5.html"><img src="http://ossweb-img.qq.com/images/sy/carnival/game-qmx5.jpg" alt="全民炫舞" width="212"><span>来自星星的舞伴，邀请送A装&gt;&gt;</span></a></li>
+						<li><a href="game/feiji.html?ADTAG=carnival.homepage"><img src="http://ossweb-img.qq.com/images/sy/carnival/game-feiji.jpg" alt="天天飞车" width="212"><span>全新闯关模式  赢取星星战机 &gt;&gt;</span></a></li>
+						<li><a href="game/ttfw.html?ADTAG=carnival.homepage"><img src="http://ossweb-img.qq.com/images/sy/carnival/game-ttfw.jpg" alt="天天富翁" width="212"><span>金秀贤陪你玩转世界  挑战得金币 &gt;&gt;</span></a></li>
+						<li><a href="game/pao.html?ADTAG=carnival.homepage"><img src="http://ossweb-img.qq.com/images/sy/carnival/game-pao.jpg" alt="天天酷跑" width="212"><span>参与酷跑任务  赢专属大礼 &gt;&gt;</span></a></li>
+						<li><a href="game/qfarm.html?ADTAG=carnival.homepage"><img src="http://ossweb-img.qq.com/images/sy/carnival/game-qfarm.jpg" alt="全民农场" width="212"><span>开启亲密任务  赢取钻石好礼 &gt;&gt;</span></a></li>
+						<li><a href="game/ttxd.html?ADTAG=carnival.homepage"><img src="http://ossweb-img.qq.com/images/sy/carnival/game-ttxd.jpg" alt="天天炫斗" width="212"><span>开启亲密任务  领专属大礼 &gt;&gt;</span></a></li>
+						<li><a href="game/peng.html?ADTAG=carnival.homepage"><img src="http://ossweb-img.qq.com/images/sy/carnival/game-peng.jpg" alt="天天爱消除" width="212"><span>开启亲密任务  赢特别奖励 &gt;&gt;</span></a></li>
+						<li class="locked"><a href="javascript:void(0)"><img src="http://ossweb-img.qq.com/images/sy/carnival/game-hero.jpg" alt="全民打怪兽" width="212"><span>即将开放  敬请期待 &gt;&gt;</span></a></li>
+						<li class="locked"><a href="http://sy.qq.com/carnival/game/ccs.html"><img src="http://ossweb-img.qq.com/images/sy/carnival/game-ttfc.jpg" alt="糖果传奇" width="212"><span>即将开放  敬请期待 &gt;&gt;</span></a></li>
+
+					</ul>
+					<div class="list-game-trigger">
+						<a href="#">糖果传奇</a>
+						<a href="#">全民炫舞</a>
+						<a href="#">全民飞机大战</a>
+						<a href="#">天天富翁</a>
+						<a href="#">天天酷跑</a>
+						<a href="#">全民农场</a>
+						<a href="#">天天炫斗</a>
+						<a href="#">天天爱消除</a>
+						<a href="#">全民打怪兽</a>
+						<a href="#">天天飞车</a>
+					</div>
+				</div>
+	
+
+			</div>
+
+			
+
+		</div>
+		<div class="page p2">
+			<nav class="sub-nav">
+				<ul>
+					<li class="btn-back"><span class="icon-left"></span>返回</li>
+					<li><h2>与金秀贤合影</h2></li>
+					<li class="btn-save">保存<span class="icon-right"></span></li>
+				</ul>
+			</nav>	
+			<div class="content">
+				<div id="container" class="editor"></div>
+				<div class="tools">
+					<ul class="list-role">
+						<li><div class="thumb"></div><p>原片</p></li>
+						<li class="current" data-fg="{ &quot;src&quot;: &quot;img/pic-ccs.png&quot;,  &quot;pos&quot;: [0, 153]}"><div class="thumb"><img src="img/role-ccs.png" alt=""></div><p>糖果传奇</p></li>
+						<li data-fg="{ &quot;src&quot;: &quot;img/pic-ccs.png&quot;,  &quot;pos&quot;: [205, 130]}"><div class="thumb"><img src="img/role-qmx5.png" alt=""></div><p>全民炫舞</p></li>
+						<li data-fg="{ &quot;src&quot;: &quot;img/pic-feiji.png&quot;,  &quot;pos&quot;: [0, 191], &quot;move&quot;: true}"><div class="thumb"><img src="img/role-feiji.png" alt=""></div><p>全民飞机大战</p></li>
+						<li data-fg="{ &quot;src&quot;: &quot;img/pic-ttfw.png&quot;,  &quot;pos&quot;: [0, 155], &quot;move&quot;: true}"><div class="thumb"><img src="img/role-ttfw.png" alt=""></div><p>天天富翁</p></li>
+						<li data-fg="{ &quot;src&quot;: &quot;img/pic-pao.png&quot;,  &quot;pos&quot;: [0, 170]}"><div class="thumb"><img src="img/role-pao.png" alt=""></div><p>天天酷跑</p></li>
+						<li data-fg="{ &quot;src&quot;: &quot;img/pic-qfarm.png&quot;,  &quot;pos&quot;: [0, 135]}"><div class="thumb"><img src="img/role-qfarm.png" alt=""></div><p>全民农场</p></li>
+						<li data-fg="{ &quot;src&quot;: &quot;img/pic-ttxd.png&quot;,  &quot;pos&quot;: [0, 116]}"><div class="thumb"><img src="img/role-ttxd.png" alt=""></div><p>天天炫斗</p></li>
+						<li data-fg="{ &quot;src&quot;: &quot;img/pic-peng.png&quot;,  &quot;pos&quot;: [146, 159]}"><div class="thumb"><img src="img/role-peng.png" alt=""></div><p>天天爱消除</p></li>
+					</ul>
+					<div class="hint">照片合成中……</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		(function(){
+			// name space
+			window.page = {};
+
+			// reset page scroll top
+			// document.documentElement.scrollTop =  0;
+			window.scrollTo(0, 0);
+
+
+			// disabled default events
+			document.documentElement.addEventListener('touchmove', function(e){
+				e.preventDefault();
+			});
+
+			// for the fucking qq browser
+			var pages = document.querySelectorAll('.page');
+			for(var i = 0; i < pages.length; i++) {
+				pages[i].style.height = window.innerHeight * 3 + 'px';
+			}
+			var p2Content = document.querySelector('.p2 .content');
+			p2Content.style.height = window.innerHeight - 51 + 'px';
+		})();
+	</script>
+
+	<script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
+	<script>if(typeof(pgvMain) == 'function') pgvMain();</script>
+
+	<script src="all.js?20140807"></script>
+
+	<script>
+		// main
+		(function(){
+
+			// page slide
+			page.pageSlide = new m.Slide({
+				target: document.querySelectorAll('.pages .page'),
+				direction: 'x',
+				onchangebefore: function(i){
+					var pageName = 'others';
+					switch(i){
+						case 0:  pageName = 'home'; break;
+						case 1: pageName = 'eidtor'; break;
+					}
+					pgvSendClick({hottag:'carnival.pages.' + pageName});
+
+					if(page.eidtor) page.eidtor.clear();
+				}
+			});
+			// page.pageSlide.playTo(1);
+
+			// main slide
+			page.p1Slide = new m.Slide({
+				target: document.querySelectorAll('.p1 .sub-page'),
+				trigger: document.querySelectorAll('.p1 nav li'),
+				onchange: function(i){
+					var pageName = 'others';
+					switch(i){
+						case 0: pageName = 'video'; break;
+						case 1: pageName = 'photo'; break;
+						case 2: pageName = 'act'; break;
+					}
+					pgvSendClick({hottag:'carnival.pages.' + pageName});
+				},
+				touchMove: true,
+				direction: 'y'
+			});
+
+			if(/page\s*=\s*photo/.test(decodeURIComponent(location.search))) {
+				var oriAnimTime = page.p1Slide.config.animTime;
+				page.p1Slide.config.animTime = 0;
+				page.p1Slide.playTo(1);
+				window.setTimeout(function(){
+					page.p1Slide.config.animTime = oriAnimTime;
+				}, oriAnimTime);
+			}
+			
+
+			page.sp2Slide = new m.Slide({
+				target: document.querySelectorAll('.sp2 .list-game li'),
+				trigger: document.querySelectorAll('.sp2 .list-game-trigger a'),
+				onchangebefore: function(n){
+
+				},
+				touchMove: true,
+				direction: 'x'
+			});		
+
+			page.roleSlide = new m.Slide({
+				target: document.querySelectorAll('.tools  .list-role li'),
+				touchMove: true,
+				touchSpeed: 3,
+				direction: 'x'
+			});
+
+
+
+
+			var p2 = document.querySelector('.p2 .tools');
+			var enableScroll = function(elem){
+				var scrollStartPos = 0;
+				elem.addEventListener("touchstart", function(e) {
+					scrollStartPos= this.scrollTop + e.touches[0].pageY;
+					e.preventDefault();
+				},false);
+				elem.addEventListener("touchmove", function(e) {
+					this.scrollTop=scrollStartPos-e.touches[0].pageY;
+					e.preventDefault();
+				},false);	
+			};
+			// enableScroll(p2);
+
+		})();
+	</script>
+
+
+
+	<script>
+		page.Notice = function(text){
+			this.container = $('<div><p style="margin-top:50%">'+text+'</div>').appendTo('body');
+			this.container.css({
+				'position': 'absolute',
+				'width': '100%',
+				'height': '100%',
+				'left': '0',
+				'top': '0',
+				'background-color': 'rgba(0,0,0,0.8)',
+				'color': '#fff',
+				'z-index': '9999',
+				'text-align': 'center'
+			});
+		};
+
+		page.Notice.prototype.setInfo = function(text){
+			this.container.find('p').text(text);
+		}	
+
+		page.Notice.prototype.show = function(){
+			this.container.show();
+		}		
+
+		page.Notice.prototype.remove = function(){
+			this.container.remove();
+		}
+
+		Zepto(function($){
+
+			$('#file').on('click', function(){
+				pgvSendClick({hottag:'carnival.btn.takephoto'});
+			});
+
+			page.eidtor = new tg.ImageEditor({
+				trigger: $('#file'),
+				container: $('#container'),
+				width: 320,
+				height: 270,
+				stageX:  $('#container')[0].offsetLeft,
+				iconScale: {
+					url: 'img/icon.png',
+					rect: [300, 300, 25, 25]
+				},
+				iconClose: {
+					url: 'img/icon.png',
+					rect: [400, 300, 25, 25]
+				},
+				event: {
+					beforechange: function(){
+						page.pageSlide.playTo(1);
+						window.setTimeout(function(){
+							 $('.tools .list-role li').eq(1).trigger('tap');
+						}, 1000);
+					
+					},
+					change: function(){
+						var self = this;
+						var logoImg = new Image();
+						logoImg.onload = function(){
+							self.addImage({'img': logoImg, 'disable': true, 'pos': [10, 10]});
+						};
+						logoImg.src = 'img/logo.png';
+
+
+						 
+					}
+				}
+			});
+
+
+
+		    	// 合影功能
+		       var roleTrigger =   $('.tools .list-role li');
+		       var mcFg, mcRole;
+		       page.game = 'ttfc';
+		     	roleTrigger.each(function(i, elem){
+		        	$(elem).on('tap', function(e){
+		        		roleTrigger.removeClass('current');
+		        		$(this).addClass('current');
+
+		        		mcFg && page.eidtor.stage.removeChild(mcFg);
+		        		mcRole && page.eidtor.stage.removeChild(mcRole);
+		        		page.game = 'ttfc';
+		        		var elemImg =  $(this).find('img');
+		        		if(elemImg.length > 0) {
+			        		var imgURL = elemImg.attr('src');
+						var img = new Image();
+						img.onload = function(){
+							mcRole = page.eidtor.addImage({'img': img, 'pos': [0, 0]});
+							page.game = imgURL.replace(/^.+role-(\w+)\.(?:png|jpg|jpeg)$/i, function(a,b,c){return b});
+
+
+						}
+						img.src = imgURL;
+					}
+
+		        		var fg = $(this).data('fg');
+		        		if(fg) {
+		        			var fgImg = new Image();
+		        			fgImg.onload = function(){
+		        				mcFg = page.eidtor.addImage({'img': fgImg,  'pos': fg.pos, 'disScale': true, 'disMove': !fg.move});
+		        			}
+		        			fgImg.src = fg.src;
+		        		}
+
+
+		        	});
+		        });
+				
+			
+		     	$(document).on('touchend', function(){
+		     		page.eidtor.unSelect();
+		     	});
+
+	    		$('.btn-save').on('touchend', function(){
+	    			var notice = new page.Notice('照片合成中……');
+
+				pgvSendClick({hottag:'carnival.btn.save.' + page.game});
+
+
+				// 去除编辑状态的元素
+				page.eidtor.toDataURL(function(data){
+					// document.write('<img src="' + data + '"/>');
+					notice.setInfo('照片上传中……');
+					$.post('http://mapps.game.qq.com/lian/a20140714sy/savepic.php', {pic: data}, function(data){
+						var data = JSON.parse(data);
+						var id = data.data.id;
+						if(id) {
+							window.location.href = 'share.html?id='+id+'&game=' + page.game;
+						}
+					})
+				});
+	    			
+	    		})
+
+
+
+		});	
+
+	</script>
+
+
+
+
+	<script>
+
+	</script>
+	<script type="text/javascript">
+		document.querySelector('.btn-back').addEventListener('touchend', function(){
+			page.pageSlide.playTo(0);
+		});
+
+		(function(){
+			 var userAgent = /android\s+([\d\.]+)/i.exec(navigator.userAgent);
+			 var isAndroid = userAgent ? true : false;
+			 var androidVersion = userAgent ? parseFloat(userAgent[1]) : null;
+			 var inWX = /micromessenger\s*\//i.test(navigator.userAgent);
+			 var inQQ = /qq\s*\//i.test(navigator.userAgent);
+
+			if(Math.random() * 10 < 8) {
+			    	if(inWX) pgvSendClick({hottag:'carnival.user.wx'});
+			    	if(inQQ) pgvSendClick({hottag:'carnival.user.qq'});
+		    	}
+
+
+		    	if(isAndroid && androidVersion < 3) {
+		    		pgvSendClick({hottag:'carnival.nosupport.' + androidVersion});
+		    		new page.Notice('<p style="font-size:14px;">您当前版本不支持</p>');
+		    		return;
+		    	}
+
+
+
+		    	document.querySelector('.real-btn').addEventListener('touchstart', function(){
+				if(isAndroid && androidVersion >= 4.4 && (inWX || inQQ)) {
+					 pgvSendClick({hottag:'carnival.nosupport.4.4'});
+					new page.Notice('<p style="padding:0 50px;font-size:14px;">由于您当前系统权限限制，请点击右上方菜单使用浏览器打开，即可体验最新潮的合影互动</p>');
+				}
+		    	});
+
+			document.addEventListener('WeixinJSBridgeReady', function() {
+				document.querySelector('.sp3 .pos1').innerHTML = '更多惊喜 尽在<span class="em">微信游戏中心</span>';
+			});  
+
+			if(/qqbrowser/i.test(navigator.userAgent)) {
+				document.querySelector('.sp3 .pos1').innerHTML = '<span class="em">QQ浏览器</span>，男神一触即达';
+			}
+
+		})();
+    </script>
+<script language="javascript" src="http://imgcache.gtimg.cn/c/=/tencentvideo_v1/tvp/js/tvp.player_v2_inews.js" charset="utf-8"></script>
+<script>
+	(function(){
+		var btnPlay = document.querySelector('.sp1 .pos1');
+		var videoWrap = document.querySelector('.video-wrap');
+		var videoContainer = document.querySelector('.video-box');
+		var video = new tvp.VideoInfo();
+		video.setVid("j0014b4sm8a");
+
+            var player = new tvp.Player();
+            player.create({
+                width: 320,
+                height: 250,
+                isHtml5UseUI:true,
+                isHtml5UseFakeFullScreen:false,
+                video: video,
+                modId: videoContainer.id,
+                autoplay: false,
+                html5ForbiddenUIFeature: tvp.$.os.iphone ? ["controlbar","title","definition"] : ["title","definition"],
+                oninited: function(){
+                	var isAndroid = /android/i.test(navigator.userAgent);
+
+	            document.querySelector('.tvp_overlay_play').addEventListener('touchend', function(){
+	            	pgvSendClick({hottag:'carnival.pages.video'});
+	            	document.querySelector('.video-box video').style.display = 'block';
+	            	if(isAndroid) {
+	            		window.setTimeout(function(){player.play()}, 1000);
+	            		videoWrap.className = 'video-wrap playing';
+	            	}
+	            });
+	            if(isAndroid) {
+		            document.querySelector('.btn-close').addEventListener('touchend', function(){
+		            	player.pause();
+		            	videoWrap.className = 'video-wrap';
+	            	document.querySelector('.video-box video').style.display = 'none';
+		            });
+	          }
+                }
+            });
+	})();
+</script>
+<script>
+function onBridgeReady() {
+    //转发朋友圈
+    WeixinJSBridge.on("menu:share:timeline", function(e) {
+        var url = 'sy.qq.com/carnival/?ADTAG=share.homepage';
+        var data = {
+            img_url: "http://ossweb-img.qq.com/images/sy/carnival/logo.png",
+            img_width: "68",
+            img_height: "64",
+            link: url,
+              desc: "",
+              title: "与金秀贤合照、领取游戏大礼…福利都在腾讯移动游戏狂欢季"
+        };
+    WeixinJSBridge.invoke("shareTimeline", data, function(res) {
+        WeixinJSBridge.log(res.err_msg)
+    });
+});
+
+    //分享给朋友
+    WeixinJSBridge.on('menu:share:appmessage', function(argv) {
+        var url = 'sy.qq.com/carnival/?ADTAG=share.homepage';
+        WeixinJSBridge.invoke("sendAppMessage", {
+            img_url: "http://ossweb-img.qq.com/images/sy/carnival/logo.png",
+            img_width: "68",
+            img_height: "64",
+            link: url,
+              desc: "狂欢季火爆开启！与金秀贤一起体验最新潮的互动合影，还能领取十大热门的移动游戏礼包。关注腾讯移动游戏公众帐号，获取更多一手独家信息",
+              title: "与金秀贤合照、领取游戏大礼…福利都在腾讯移动游戏狂欢季"
+        }, function(res) {
+            WeixinJSBridge.log(res.err_msg)
+        });
+    });
+};
+document.addEventListener('WeixinJSBridgeReady', function() {
+    onBridgeReady();
+});
+</script>	
+
+   
+ 
+			    
+</body>
+</html><!--[if !IE]>|xGv00|8af8645eca38a4a7123fa1f39df91f18<![endif]-->
