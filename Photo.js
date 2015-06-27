@@ -126,8 +126,8 @@ function rotate(e){
     ctx.translate(centerX, centerY);
     ctx.rotate( (Math.PI / 180) * e.rotation);  //rotate .. degrees.
     ctx.translate(-imgCenterX, -imgCenterY);
-    
-    drawSquare(0, 0, 100, 100);
+    //drawSquare(0, 0, 100, 100);
+    ctx.drawImage(uploadPhoto, 0, 0);
     ctx.restore();
 }
 
