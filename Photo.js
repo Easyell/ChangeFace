@@ -15,6 +15,9 @@ window.ontouchmove = function(){
     _e.stopPropagation();
 };
 
+var uploadPhotoX = 0;
+var uploadPhotoY = 0;
+
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext('2d'),
     canvasWidth = canvas.width,
@@ -68,7 +71,7 @@ uploadButton.onclick = function loadImage() {
                             });
                             ctx.save();
                             ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-                            ctx.drawImage(uploadPhoto, 0, 0);
+                            ctx.drawImage(uploadPhoto, uploadPhotoX, uploadPhotoY);
                             ctx.globalAlpha = 0.8;
                             ctx.drawImage(dressImage, 0, 0);
                             ctx.restore();
@@ -109,17 +112,18 @@ var imgCenterX = 50,
     imgCenterY = 50;
 
 function move(touch) {
-    //ctx.save();
-    //ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-    //ctx.drawImage(uploadPhoto, 50, 50);
-    console.info(touch);
-    //ctx.restore();
-    //drawBeauty(dressImage);
+    uploadPhotoX = touch.pageX - uploadPhoto.width / 2;
+    uploadPhotoY = touch.pageY - uploadPhoto.height / 2;
+    ctx.save();
+    ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+    ctx.drawImage(uploadPhoto, uploadPhotoX, uploadPhotoY);
+    //console.info(touch);
+    ctx.restore();
+    drawBeauty(dressImage);
 
 }
 
 function rotate(e){
-    
     ctx.save();
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
     // Rotate center context
@@ -127,7 +131,7 @@ function rotate(e){
     ctx.rotate( (Math.PI / 180) * e.rotation);  //rotate .. degrees.
     ctx.translate(-imgCenterX, -imgCenterY);
     //drawSquare(0, 0, 100, 100);
-    ctx.drawImage(uploadPhoto, 0, 0);
+    ctx.drawImage(uploadPhoto, uploadPhotoX, uploadPhotoY);
     ctx.restore();
 }
 
