@@ -183,6 +183,7 @@ addEvent(document, 'touchmove', function(e) {
         requestAnimFrame(function(){
             //rotate(e);
             zoom(e);
+            return;
         });
     }else if(touches && touches.length == 1) {
         requestAnimFrame(function() {
