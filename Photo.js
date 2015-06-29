@@ -32,7 +32,7 @@ var canvas = document.getElementById("canvas"),
     uploadButton = document.getElementById("btnGetFile"),
     uploadPhoto;
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight - 30;
+canvas.height = window.innerHeight - 50;
 var canvasWidth = canvas.width;
 var canvasHeight = canvas.height;
 // add event handler
