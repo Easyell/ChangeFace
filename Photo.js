@@ -21,6 +21,7 @@ var startFingerDist;
 var startFingerX;
 var startFingerY;
 var ratio = 1;
+var lastRatio = 1;
 
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext('2d'),
@@ -154,7 +155,7 @@ function move(touch) {
 
 function zoom(e) {
     var nowFingerDist = getTouchDist(e).dist;
-    ratio = ratio * nowFingerDist / startFingerDist; //计算缩放比
+    ratio = nowFingerDist / startFingerDist; //计算缩放比
     ctx.save();
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
     ctx.scale(ratio, ratio);
@@ -199,5 +200,13 @@ addEvent(document, 'touchstart', function(e) {
         startFingerDist = getTouchDist(e).dist;
         startFingerX    = getTouchDist(e).x;
         startFingerY    = getTouchDist(e).y;
+    }
+});
+
+
+addEvent(document, 'touchend', function(e) {
+    var touchTarget = e.targetTouches.length;
+    if(touchTarget == 2){
+        lastRatio = ratio;
     }
 });
