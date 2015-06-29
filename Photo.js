@@ -143,7 +143,9 @@ function drawUpLoadPhoto() {
     ctx.save();
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
     ctx.scale(ratio, ratio);
+    ctx.translate(uploadPhotoX + uploadPhoto.width * ratio / 2, uploadPhotoY + uploadPhoto.height * ratio / 2);
     ctx.rotate( (Math.PI / 180) * rotateDegree);
+    ctx.translate(-(uploadPhotoX + uploadPhoto.width * ratio / 2), -(uploadPhotoY + uploadPhoto.height * ratio / 2));
     ctx.drawImage(uploadPhoto, uploadPhotoX / ratio, uploadPhotoY / ratio);
     //console.info(touch);
     ctx.restore();
