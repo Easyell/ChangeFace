@@ -22,6 +22,7 @@ var startFingerX;
 var startFingerY;
 var ratio = 1;
 var lastRatio = 1;
+var finger = false;
 
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext('2d'),
@@ -114,14 +115,11 @@ function getTouchDist(e){
         x3 = 0,
         y3 = 0,
         result = {};
-
     x1 = e.touches[0].pageX;
     x2 = e.touches[1].pageX;
     y1 = e.touches[0].pageY - document.body.scrollTop;
     y2 = e.touches[1].pageY - document.body.scrollTop;
-
     if(!x1 || !x2) return;
-
     if(x1<=x2){
         x3 = (x2-x1)/2+x1;
     }else{
@@ -132,7 +130,6 @@ function getTouchDist(e){
     }else{
         y3 = (y1-y2)/2+y2;
     }
-
     result = {
         dist: Math.round(Math.sqrt(Math.pow(x1-x2,2)+Math.pow(y1-y2,2))),
         x: Math.round(x3),
@@ -179,13 +176,13 @@ addEvent(document, 'touchmove', function(e) {
     // Two finger gesture
     e.preventDefault();
     var touches = e.changedTouches;
-    if(touches && touches.length == 2){
+    if(touches && touches.length == 2 && finger){
         requestAnimFrame(function(){
             //rotate(e);
             zoom(e);
             return;
         });
-    }else if(touches && touches.length == 1) {
+    }else if(touches && touches.length == 1 && !finger) {
         requestAnimFrame(function() {
             move(touches[0]);
         });
@@ -200,6 +197,9 @@ addEvent(document, 'touchstart', function(e) {
         startFingerDist = getTouchDist(e).dist;
         startFingerX    = getTouchDist(e).x;
         startFingerY    = getTouchDist(e).y;
+        finger = true;
+    } else if (touchTarget == 1) {
+        finger = false;
     }
 });
 
