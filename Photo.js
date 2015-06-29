@@ -154,7 +154,12 @@ function move(touch) {
 function zoom(e) {
     var nowFingerDist = getTouchDist(e).dist,
     ratio = nowFingerDist / startFingerDist; //计算缩放比
-    uploadPhoto.scale(ratio, ratio);
+    ctx.save();
+    ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+    ctx.scale(ratio, ratio);
+    ctx.drawImage(uploadPhoto, uploadPhotoX, uploadPhotoY);
+    ctx.restore();
+    drawBeauty(dressImage);
 }
 
 function rotate(e){
