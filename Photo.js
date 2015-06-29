@@ -17,6 +17,9 @@ window.ontouchmove = function(){
 
 var uploadPhotoX = 0;
 var uploadPhotoY = 0;
+var startFingerDist;
+var startFingerX;
+var startFingerY;
 
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext('2d'),
@@ -111,6 +114,41 @@ var centerX = canvasWidth / 2,
 var imgCenterX = 50,
     imgCenterY = 50;
 
+function getTouchDist(e){
+    var x1 = 0,
+        y1 = 0,
+        x2 = 0,
+        y2 = 0,
+        x3 = 0,
+        y3 = 0,
+        result = {};
+
+    x1 = e.touches[0].pageX;
+    x2 = e.touches[1].pageX;
+    y1 = e.touches[0].pageY - document.body.scrollTop;
+    y2 = e.touches[1].pageY - document.body.scrollTop;
+
+    if(!x1 || !x2) return;
+
+    if(x1<=x2){
+        x3 = (x2-x1)/2+x1;
+    }else{
+        x3 = (x1-x2)/2+x2;
+    }
+    if(y1<=y2){
+        y3 = (y2-y1)/2+y1;
+    }else{
+        y3 = (y1-y2)/2+y2;
+    }
+
+    result = {
+        dist: Math.round(Math.sqrt(Math.pow(x1-x2,2)+Math.pow(y1-y2,2))),
+        x: Math.round(x3),
+        y: Math.round(y3)
+    };
+    return result;
+}
+
 function move(touch) {
     uploadPhotoX = touch.pageX - uploadPhoto.width / 2;
     uploadPhotoY = touch.pageY - uploadPhoto.height / 2;
@@ -123,6 +161,12 @@ function move(touch) {
 
 }
 
+function zoom(e) {
+    var nowFingerDist = getTouchDist(e).dist,
+    ratio = nowFingerDist / self.startFingerDist; //计算缩放比
+    uploadPhoto.scale(ratio, ratio);
+}
+
 function rotate(e){
     ctx.save();
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
@@ -130,23 +174,27 @@ function rotate(e){
     ctx.translate(centerX, centerY);
     ctx.rotate( (Math.PI / 180) * e.rotation);  //rotate .. degrees.
     ctx.translate(-imgCenterX, -imgCenterY);
-    //drawSquare(0, 0, 100, 100);
     ctx.drawImage(uploadPhoto, uploadPhotoX, uploadPhotoY);
     ctx.restore();
-}
-
-function drawSquare(x, y, w, h){
-    ctx.fillStyle = "orange";  
-    ctx.fillRect(x, y, w, h);   
 }
 
 addEvent(document, 'touchmove', function(e) {
     // Two finger gesture
     if(event.touches && event.touches.length === 2){
         requestAnimFrame(function(){
-            rotate(e);
+            //rotate(e);
+            zoom(e);
         });
     }
 });
-// Init 
-drawSquare(centerX - imgCenterX, centerY - imgCenterY, 100, 100);
+
+
+addEvent(document, 'touchstart', function(e) {
+    e.preventDefault();
+    var touchTarget = e.targetTouches.length;
+    if(touchTarget == 2){
+        startFingerDist = getTouchDist(e).dist;
+        startFingerX    = getTouchDist(e).x;
+        startFingerY    = getTouchDist(e).y;
+    }
+});
