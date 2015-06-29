@@ -151,8 +151,9 @@ function drawUpLoadPhoto() {
 }
 
 function move(touch) {
-    uploadPhotoX = touch.pageX - uploadPhoto.width / 2;
-    uploadPhotoY = touch.pageY - uploadPhoto.height / 2;
+
+    uploadPhotoX = touch.pageX - uploadPhoto.width * ratio / 2;
+    uploadPhotoY = touch.pageY - uploadPhoto.height * ratio / 2;
     drawUpLoadPhoto();
     drawBeauty(dressImage);
 }
