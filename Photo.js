@@ -141,26 +141,26 @@ function getTouchDist(e){
     return result;
 }
 
-function move(touch) {
-    uploadPhotoX = touch.pageX - uploadPhoto.width / 2;
-    uploadPhotoY = touch.pageY - uploadPhoto.height / 2;
+function drawUpLoadPhoto() {
     ctx.save();
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+    ctx.scale(ratio, ratio);
     ctx.drawImage(uploadPhoto, uploadPhotoX, uploadPhotoY);
     //console.info(touch);
     ctx.restore();
-    drawBeauty(dressImage);
+}
 
+function move(touch) {
+    uploadPhotoX = touch.pageX - uploadPhoto.width / 2;
+    uploadPhotoY = touch.pageY - uploadPhoto.height / 2;
+    drawUpLoadPhoto();
+    drawBeauty(dressImage);
 }
 
 function zoom(e) {
     var nowFingerDist = getTouchDist(e).dist;
     ratio = lastRatio * nowFingerDist / startFingerDist; //计算缩放比
-    ctx.save();
-    ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-    ctx.scale(ratio, ratio);
-    ctx.drawImage(uploadPhoto, uploadPhotoX, uploadPhotoY);
-    ctx.restore();
+    drawUpLoadPhoto();
     drawBeauty(dressImage);
 }
 
