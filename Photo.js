@@ -62,16 +62,6 @@ uploadButton.onclick = function loadImage() {
                         var result = this.result;
                         uploadPhoto = new Image();
                         uploadPhoto.onload = function() {
-                            addEvent(document, 'touchmove', function(e){
-                                // Two finger gesture
-                                e.preventDefault();
-                                    var touches = e.changedTouches;
-                                    if(touches && touches.length == 1) {
-                                            requestAnimFrame(function() {
-                                                    move(touches[0]);
-                                            });
-                                    }
-                            });
                             ctx.save();
                             ctx.clearRect(0, 0, canvasWidth, canvasHeight);
                             ctx.drawImage(uploadPhoto, uploadPhotoX, uploadPhotoY);
@@ -184,6 +174,12 @@ addEvent(document, 'touchmove', function(e) {
         requestAnimFrame(function(){
             //rotate(e);
             zoom(e);
+        });
+    }
+    var touches = e.changedTouches;
+    if(touches && touches.length == 1) {
+        requestAnimFrame(function() {
+            move(touches[0]);
         });
     }
 });
