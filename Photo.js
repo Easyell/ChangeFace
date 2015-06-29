@@ -170,6 +170,7 @@ function rotate(e){
 
 addEvent(document, 'touchmove', function(e) {
     // Two finger gesture
+    e.preventDefault();
     if(event.touches && event.touches.length === 2){
         requestAnimFrame(function(){
             //rotate(e);
