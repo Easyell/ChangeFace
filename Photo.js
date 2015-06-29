@@ -22,6 +22,7 @@ var startFingerX;
 var startFingerY;
 var ratio = 1;
 var lastRatio = 1;
+var lastRotateDegree = 0;
 var rotateDegree = 0;
 var finger = false;
 
@@ -161,7 +162,7 @@ function move(touch) {
 function zoomAndRotate(e) {
     var nowFingerDist = getTouchDist(e).dist;
     ratio = lastRatio * nowFingerDist / startFingerDist; //计算缩放比
-    rotateDegree = e.rotation;
+    rotateDegree = lastRotateDegree + e.rotation;
     drawUpLoadPhoto();
     drawBeauty(dressImage);
 }
@@ -200,8 +201,10 @@ addEvent(document, 'touchstart', function(e) {
 
 addEvent(document, 'touchend', function(e) {
     lastRatio = ratio;
+    lastRotateDegree = rotateDegree;
     var testValue = document.getElementById('testValue');
     testValue.innerText = lastRatio;
+
 });
 
 
