@@ -151,7 +151,6 @@ function drawUpLoadPhoto() {
 }
 
 function move(touch) {
-
     uploadPhotoX = touch.pageX - uploadPhoto.width * ratio / 2;
     uploadPhotoY = touch.pageY - uploadPhoto.height * ratio / 2;
     drawUpLoadPhoto();
@@ -180,13 +179,12 @@ addEvent(document, 'touchmove', function(e) {
     // Two finger gesture
     e.preventDefault();
     var touches = e.changedTouches;
-    if(touches && touches.length === 2){
+    if(touches && touches.length == 2){
         requestAnimFrame(function(){
             //rotate(e);
             zoom(e);
         });
-    }
-    if(touches && touches.length == 1) {
+    }else if(touches && touches.length == 1) {
         requestAnimFrame(function() {
             move(touches[0]);
         });
