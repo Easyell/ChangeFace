@@ -22,6 +22,7 @@ var startFingerX;
 var startFingerY;
 var ratio = 1;
 var lastRatio = 1;
+var rotateDegree = 0;
 var finger = false;
 
 var canvas = document.getElementById("canvas"),
@@ -142,6 +143,7 @@ function drawUpLoadPhoto() {
     ctx.save();
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
     ctx.scale(ratio, ratio);
+    ctx.rotate( (Math.PI / 180) * rotateDegree);
     ctx.drawImage(uploadPhoto, uploadPhotoX / ratio, uploadPhotoY / ratio);
     //console.info(touch);
     ctx.restore();
@@ -154,22 +156,12 @@ function move(touch) {
     drawBeauty(dressImage);
 }
 
-function zoom(e) {
+function zoomAndRotate(e) {
     var nowFingerDist = getTouchDist(e).dist;
     ratio = lastRatio * nowFingerDist / startFingerDist; //计算缩放比
+    rotateDegree = e.rotation;
     drawUpLoadPhoto();
     drawBeauty(dressImage);
-}
-
-function rotate(e){
-    ctx.save();
-    ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-    // Rotate center context
-    ctx.translate(centerX, centerY);
-    ctx.rotate( (Math.PI / 180) * e.rotation);  //rotate .. degrees.
-    ctx.translate(-imgCenterX, -imgCenterY);
-    ctx.drawImage(uploadPhoto, uploadPhotoX, uploadPhotoY);
-    ctx.restore();
 }
 
 addEvent(document, 'touchmove', function(e) {
@@ -179,7 +171,7 @@ addEvent(document, 'touchmove', function(e) {
     if(touches && touches.length == 2 && finger){
         requestAnimFrame(function(){
             //rotate(e);
-            zoom(e);
+            zoomAndRotate(e);
             return;
         });
     }else if(touches && touches.length == 1 && !finger) {
