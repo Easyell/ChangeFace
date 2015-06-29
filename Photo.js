@@ -144,8 +144,8 @@ function getTouchDist(e){
 function drawUpLoadPhoto() {
     ctx.save();
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-    ctx.drawImage(uploadPhoto, uploadPhotoX, uploadPhotoY);
     ctx.scale(ratio, ratio);
+    ctx.drawImage(uploadPhoto, uploadPhotoX / ratio, uploadPhotoY / ratio);
     //console.info(touch);
     ctx.restore();
 }
