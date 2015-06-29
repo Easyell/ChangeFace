@@ -163,7 +163,7 @@ function move(touch) {
 
 function zoom(e) {
     var nowFingerDist = getTouchDist(e).dist,
-    ratio = nowFingerDist / self.startFingerDist; //计算缩放比
+    ratio = nowFingerDist / startFingerDist; //计算缩放比
     uploadPhoto.scale(ratio, ratio);
 }
 
