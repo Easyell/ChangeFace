@@ -20,6 +20,7 @@ var uploadPhotoY = 0;
 var startFingerDist;
 var startFingerX;
 var startFingerY;
+var ratio = 1;
 
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext('2d'),
@@ -153,7 +154,7 @@ function move(touch) {
 
 function zoom(e) {
     var nowFingerDist = getTouchDist(e).dist,
-    ratio = nowFingerDist / startFingerDist; //计算缩放比
+    ratio = ratio * nowFingerDist / startFingerDist; //计算缩放比
     ctx.save();
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
     ctx.scale(ratio, ratio);
