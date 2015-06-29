@@ -171,18 +171,18 @@ function rotate(e){
 addEvent(document, 'touchmove', function(e) {
     // Two finger gesture
     e.preventDefault();
-    if(event.touches && event.touches.length === 2){
+    var touches = e.changedTouches;
+    if(touches && touches.length === 2){
         requestAnimFrame(function(){
             //rotate(e);
             zoom(e);
         });
     }
-    var touches = e.changedTouches;
-    if(touches && touches.length == 1) {
-        requestAnimFrame(function() {
-            move(touches[0]);
-        });
-    }
+    //if(touches && touches.length == 1) {
+    //    requestAnimFrame(function() {
+    //        move(touches[0]);
+    //    });
+    //}
 });
 
 
