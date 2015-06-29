@@ -205,13 +205,9 @@ addEvent(document, 'touchstart', function(e) {
 
 
 addEvent(document, 'touchend', function(e) {
-    var touchTarget = e.targetTouches.length;
-    if(touchTarget == 2){
-        lastRatio = ratio;
-        var testValue = document.getElementById('testValue');
-        testValue.innerText = lastRatio;
-
-    }
+    lastRatio = ratio;
+    var testValue = document.getElementById('testValue');
+    testValue.innerText = lastRatio;
 });
 
 
