@@ -28,11 +28,13 @@ var finger = false;
 
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext('2d'),
-    canvasWidth = canvas.width,
-    canvasHeight = canvas.height,
     dressImage = new Image(),
     uploadButton = document.getElementById("btnGetFile"),
     uploadPhoto;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+var canvasWidth = canvas.width;
+var canvasHeight = canvas.height;
 // add event handler
 var addEvent = (function () {
     if (document.addEventListener) {
@@ -81,6 +83,7 @@ uploadButton.onclick = function loadImage() {
 function drawBeauty(dressImage){
     ctx.save();
     ctx.globalAlpha = 0.8;
+    ctx.scale(canvasWidth / dressImage.height , canvasHeight / dressImage.height);
     ctx.drawImage(dressImage, 0, 0);
     ctx.restore();
 }
