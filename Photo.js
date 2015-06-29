@@ -208,5 +208,8 @@ addEvent(document, 'touchend', function(e) {
     var touchTarget = e.targetTouches.length;
     if(touchTarget == 2){
         lastRatio = ratio;
+        var testVatlue = document.getElementById('testValue');
+        testVatlue.text(lastRatio);
+
     }
 });
