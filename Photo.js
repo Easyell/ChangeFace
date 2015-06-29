@@ -67,12 +67,8 @@ uploadButton.onclick = function loadImage() {
                         var result = this.result;
                         uploadPhoto = new Image();
                         uploadPhoto.onload = function() {
-                            ctx.save();
-                            ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-                            ctx.drawImage(uploadPhoto, uploadPhotoX, uploadPhotoY);
-                            ctx.globalAlpha = 0.8;
-                            ctx.drawImage(dressImage, 0, 0);
-                            ctx.restore();
+                           drawUpLoadPhoto();
+                           drawBeauty(dressImage);
                     };
 
                     // 转换二进制数据
@@ -90,7 +86,7 @@ function drawBeauty(dressImage){
 }
 
 function load(){
-    dressImage.src = "http://pic.baike.soso.com/p/20140220/20140220030734-2078101866.jpg";
+    dressImage.src = "20140220030734-2078101866.png";
     if(dressImage.complete){
         drawBeauty(dressImage);
     }else{
