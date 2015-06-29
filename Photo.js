@@ -190,7 +190,7 @@ addEvent(document, 'touchmove', function(e) {
 
 
 addEvent(document, 'touchstart', function(e) {
-    e.preventDefault();
+    //e.preventDefault();
     var touchTarget = e.targetTouches.length;
     if(touchTarget == 2){
         startFingerDist = getTouchDist(e).dist;
