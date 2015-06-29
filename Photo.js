@@ -185,11 +185,11 @@ addEvent(document, 'touchmove', function(e) {
             zoom(e);
         });
     }
-    //if(touches && touches.length == 1) {
-    //    requestAnimFrame(function() {
-    //        move(touches[0]);
-    //    });
-    //}
+    if(touches && touches.length == 1) {
+        requestAnimFrame(function() {
+            move(touches[0]);
+        });
+    }
 });
 
 
