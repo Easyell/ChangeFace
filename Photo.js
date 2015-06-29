@@ -155,7 +155,7 @@ function move(touch) {
 
 function zoom(e) {
     var nowFingerDist = getTouchDist(e).dist;
-    ratio = nowFingerDist / startFingerDist; //计算缩放比
+    ratio = lastRatio * nowFingerDist / startFingerDist; //计算缩放比
     ctx.save();
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
     ctx.scale(ratio, ratio);
