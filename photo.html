@@ -6,9 +6,12 @@
 </head>
 <body>
     <canvas id="canvas" width="500" height="400"></canvas>
-    <input type="file" name="fileDemo" id="fileDemo"/></br>
-    <input type="button" value="获取文件的名字" id="btnGetFile"/>
+    <div class="buttonDiv">
+        <input id="real-btn" type="file" class="real-btn" onchange="loadUpLoadImage()"/>
+        <button class="btn-take-photo">我要合影</button>
+    </div>
     <p id="testValue">testValue</p>
+    <script src="jquery-2.1.4.js"></script>
     <script src="Photo.js"></script>
 </body>
 </html>

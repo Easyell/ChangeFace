@@ -29,7 +29,6 @@ var finger = false;
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext('2d'),
     dressImage = new Image(),
-    uploadButton = document.getElementById("btnGetFile"),
     uploadPhoto;
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight - 50;
@@ -61,8 +60,8 @@ var addEvent = (function () {
 })();
 load();
 
-uploadButton.onclick = function loadImage() {
-    var file = document.getElementById("fileDemo").files[0];
+var loadUpLoadImage = function loadImage() {
+    var file = document.getElementById("real-btn").files[0];
                     var fr = new FileReader();
                     fr.readAsDataURL(file);
                     fr.onload = function(fe){
@@ -72,9 +71,6 @@ uploadButton.onclick = function loadImage() {
                            drawUpLoadPhoto();
                            drawBeauty(dressImage);
                     };
-
-                    // 转换二进制数据
-                    var base64 = result.replace(/^.*?,/,'');
                     uploadPhoto.src = result;
     };
 }
@@ -101,12 +97,6 @@ function load(){
         };
     };
 }//load
-
-var centerX = canvasWidth / 2,
-    centerY = canvasHeight / 2;
-
-var imgCenterX = 50,
-    imgCenterY = 50;
 
 function getTouchDist(e){
     var x1 = 0,
@@ -201,11 +191,14 @@ addEvent(document, 'touchstart', function(e) {
 addEvent(document, 'touchend', function(e) {
     lastRatio = ratio;
     lastRotateDegree = rotateDegree;
-    var testValue = document.getElementById('testValue');
-    testValue.innerText = lastRatio;
-
 });
 
+upLoadImageToServer("","guoshencheng");
 
-var testValue = document.getElementById('testValue');
-testValue.innerText = lastRatio;
+function upLoadImageToServer(url, name) {
+    var data = canvas.toDataURL();
+    var  base64Data = data.substr(22);
+    $.post(url, {data: base64Data, name:name}, function(data) {
+        console.info(data);
+    })
+}
