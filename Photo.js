@@ -25,7 +25,10 @@ var lastRatio = 1;
 var lastRotateDegree = 0;
 var rotateDegree = 0;
 var finger = false;
-
+var btn_finish = document.getElementById("btn-finish");
+var btn_take_photo_again = document.getElementById("btn-take-photo-again");
+var btn_take_photo = document.getElementById("btn-take-photo");
+var real_btn = document.getElementById("real-btn");
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext('2d'),
     dressImage = new Image(),
@@ -60,18 +63,30 @@ var addEvent = (function () {
 })();
 load();
 
+btn_finish.onclick = function() {
+    btn_finish.style.display = 'none';
+    btn_take_photo_again.style.display = 'none';
+    btn_take_photo.style.display = 'block';
+    real_btn.style.display = 'block';
+    load();
+};
+
 var loadUpLoadImage = function loadImage() {
-    var file = document.getElementById("real-btn").files[0];
-                    var fr = new FileReader();
-                    fr.readAsDataURL(file);
-                    fr.onload = function(fe){
-                        var result = this.result;
-                        uploadPhoto = new Image();
-                        uploadPhoto.onload = function() {
-                           drawUpLoadPhoto();
-                           drawBeauty(dressImage);
-                    };
-                    uploadPhoto.src = result;
+    var file = real_btn.files[0];
+    var fr = new FileReader();
+    fr.readAsDataURL(file);
+    fr.onload = function(fe){
+        var result = this.result;
+        uploadPhoto = new Image();
+        uploadPhoto.onload = function() {
+            drawUpLoadPhoto();
+            drawBeauty(dressImage);
+        };
+        uploadPhoto.src = result;
+        btn_finish.style.display = 'block';
+        btn_take_photo_again.style.display = 'block';
+        btn_take_photo.style.display = 'none';
+        real_btn.style.display = 'none';
     };
 }
 
@@ -156,6 +171,23 @@ function zoomAndRotate(e) {
     drawBeauty(dressImage);
 }
 
+
+function upLoadImageToServer(url, name) {
+    var data = canvas.toDataURL();
+    var  base64Data = data.substr(22);
+    $.post(url, {data: base64Data, name:name}, function(data) {
+        console.info(data);
+    })
+}
+
+function onclickBtn_take_photo_again() {
+    btn_finish.style.display = 'none';
+    btn_take_photo_again.style.display = 'none';
+    btn_take_photo.style.display = 'block';
+    real_btn.style.display = 'block';
+    load();
+}
+
 addEvent(document, 'touchmove', function(e) {
     // Two finger gesture
     e.preventDefault();
@@ -187,18 +219,7 @@ addEvent(document, 'touchstart', function(e) {
     }
 });
 
-
 addEvent(document, 'touchend', function(e) {
     lastRatio = ratio;
     lastRotateDegree = rotateDegree;
 });
-
-upLoadImageToServer("","guoshencheng");
-
-function upLoadImageToServer(url, name) {
-    var data = canvas.toDataURL();
-    var  base64Data = data.substr(22);
-    $.post(url, {data: base64Data, name:name}, function(data) {
-        console.info(data);
-    })
-}
