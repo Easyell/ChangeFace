@@ -63,13 +63,18 @@ var addEvent = (function () {
 })();
 load();
 
-btn_finish.onclick = function() {
+btn_take_photo_again.onclick = function() {
     btn_finish.style.display = 'none';
     btn_take_photo_again.style.display = 'none';
     btn_take_photo.style.display = 'block';
     real_btn.style.display = 'block';
     load();
 };
+
+btn_finish.onclick = function() {
+    var data = canvas.toDataURL("image/png");
+    console.info(data);
+}
 
 var loadUpLoadImage = function loadImage() {
     var file = real_btn.files[0];
@@ -100,6 +105,7 @@ function drawBeauty(dressImage){
 }
 
 function load(){
+    //dressImage.crossOrigin = "anonymous";
     dressImage.src = "20140220030734-2078101866.png";
     if(dressImage.complete){
         drawBeauty(dressImage);
