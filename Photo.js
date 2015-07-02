@@ -10,7 +10,7 @@ window.requestAnimFrame = (function() {
 			};
 })();
 
-window.ontouchmove = function(){
+window.ontouchmove = function(_e){
     _e.preventDefault();
     _e.stopPropagation();
 };
